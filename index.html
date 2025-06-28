@@ -6,101 +6,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How U.S. College Students Use AI in 2025: A Quantitative Snapshot</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      padding: 0 16px;
-      background: #f8f9fb;
-      color: #23272f;
-      line-height: 1.7;
-    }
-    h1, h2, h3 {
-      color: #1a237e;
-      margin-top: 2em;
-      margin-bottom: 0.5em;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-top: 1em;
-    }
-    h2 {
-      font-size: 1.5em;
-      border-bottom: 2px solid #e3e7f0;
-      padding-bottom: 0.2em;
-    }
-    h3 {
-      font-size: 1.15em;
-      margin-top: 1.5em;
-    }
-    ul, ol {
-      margin: 1em 0 1em 2em;
-    }
-    .toc {
-      background: #e3e7f0;
-      padding: 1em;
-      border-radius: 8px;
-      margin: 2em 0;
-    }
-    .stat {
-      background: #e8f5e9;
-      border-left: 5px solid #43a047;
-      padding: 0.7em 1em;
-      margin: 1em 0;
-      font-weight: bold;
-      display: inline-block;
-    }
-    .quote {
-      border-left: 4px solid #90caf9;
-      background: #f1f8ff;
-      padding: 1em;
-      margin: 1.5em 0;
-      font-style: italic;
-      color: #37474f;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1.5em 0;
-      background: #fff;
-    }
-    th, td {
-      border: 1px solid #e3e7f0;
-      padding: 0.75em;
-      text-align: left;
-    }
-    th {
-      background: #e3e7f0;
-    }
-    img {
-      display: block;
-      margin: 2em auto;
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    /* FAQ styles */
-    .faqs details {
-      margin-bottom: 1em;
-      background: #f6f8fa;
-      border-radius: 6px;
-      padding: 0.7em 1em;
-      border: 1px solid #e3e7f0;
-    }
-    .faqs summary {
-      font-weight: bold;
-      cursor: pointer;
-      color: #1a237e;
-      outline: none;
-    }
-    .faqs p {
-      margin: 0.5em 0 0 0;
-    }
-    @media (max-width: 600px) {
-      h1 { font-size: 1.5em; }
-      h2 { font-size: 1.1em; }
-      .toc { font-size: 0.95em; }
-      table, th, td { font-size: 0.95em; }
-    }
-    .centered-footer {
+    
+  body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fb;
+  color: #23272f;
+  margin: 0;
+  padding: 0 16px;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  color: #1a237e;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 1em;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom: 2px solid #e3e7f0;
+  padding-bottom: 0.2em;
+  margin-top: 2em;
+}
+
+h3 {
+  font-size: 1.15em;
+  margin-top: 1.5em;
+}
+
+p {
+  margin: 1em 0;
+  font-size: 1.08em;
+}
+
+ul, ol {
+  margin: 1em 0 1em 2em;
+  font-size: 1.05em;
+}
+
+.toc {
+  background: #e3e7f0;
+  padding: 1em;
+  border-radius: 8px;
+  margin: 2em 0;
+}
+
+.stat {
+  background: #e8f5e9;
+  border-left: 5px solid #43a047;
+  padding: 0.7em 1em;
+  margin: 1em 0;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.quote {
+  border-left: 4px solid #90caf9;
+  background: #f1f8ff;
+  padding: 1em;
+  margin: 1.5em 0;
+  font-style: italic;
+  color: #37474f;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  background: #fff;
+  font-size: 1.05em;
+}
+
+th, td {
+  border: 1px solid #e3e7f0;
+  padding: 0.75em;
+  text-align: left;
+}
+
+th {
+  background: #e3e7f0;
+  font-weight: 600;
+}
+
+figure {
+  margin: 2em auto;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.98em;
+  color: #607d8b;
+  margin-top: 0.5em;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.06);
+}
+
+.faqs details {
+  margin-bottom: 1em;
+  background: #f6f8fa;
+  border-radius: 6px;
+  padding: 0.7em 1em;
+  border: 1px solid #e3e7f0;
+  transition: box-shadow 0.2s;
+}
+.faqs details[open] {
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.09);
+}
+.faqs summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #1a237e;
+  outline: none;
+}
+.faqs p {
+  margin: 0.5em 0 0 0;
+}
+
+.centered-footer {
   text-align: center;
   margin: 2em 0;
   font-size: 1.1em;
@@ -110,14 +147,23 @@
   color: #1976d2;
   text-decoration: underline;
 }
-  .references a {
-  color: #2196f3; /* Light blue */
-  text-decoration: underline;
-  }
-    .references a:visited {
+
+.references a {
   color: #2196f3;
-    }
-    
+  text-decoration: underline;
+}
+
+.references a:visited {
+  color: #2196f3;
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.1em; }
+  .toc, table, th, td { font-size: 0.98em; }
+  .centered-footer { font-size: 1em; }
+  }
+  
   </style>
 </head>
 <body>
